@@ -13170,15 +13170,15 @@ img {
 
 @font-face {
   font-family: 'proxima-nova-semi';
-  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");
-  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");
+  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?v=#23");
+  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix?v=#23") format("embedded-opentype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2?v=#23") format("woff2"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff?v=#23") format("woff"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf?v=#23") format("truetype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi?v=#23") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'proxima-nova-regular';
-  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");
-  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");
+  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?v=#23");
+  src: url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix?v=#23") format("embedded-opentype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff2?v=#23") format("woff2"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff?v=#23") format("woff"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf?v=#23") format("truetype"), url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular?v=#23") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13443,122 +13443,158 @@ table {
 html, body {
   background: white;
   color: #111;
-  font: normal 100%/1.5 'proxima-nova-regular', sans-serif;
+  font-family: 'proxima-nova-regular', sans-serif;
+  font-size: 0.9375rem;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   height: auto;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 19, ../scss/_pdv.scss */
+/* line 23, ../scss/_pdv.scss */
 body {
   padding-bottom: 4rem;
 }
 
-/* line 22, ../scss/_pdv.scss */
+/* line 26, ../scss/_pdv.scss */
 h1, h2, h3, h4 {
   color: #111;
   line-height: 1.4;
 }
 
-/* line 26, ../scss/_pdv.scss */
+/* line 30, ../scss/_pdv.scss */
 strong, h1, h2, h3, h4 {
   font-family: 'proxima-nova-semi', sans-serif;
   font-weight: normal;
 }
 
-/* line 31, ../scss/_pdv.scss */
+/* line 35, ../scss/_pdv.scss */
 a {
-  color: #999;
+  color: #888;
   text-decoration: underline;
 }
-/* line 34, ../scss/_pdv.scss */
+/* line 38, ../scss/_pdv.scss */
 a:hover {
   color: #ee7873;
 }
 
-/* line 43, ../scss/_pdv.scss */
-#idp-container h2 {
+/* line 47, ../scss/_pdv.scss */
+#idp-container-one h2, #idp-container-two h2 {
   font-size: 1.125rem;
 }
-/* line 46, ../scss/_pdv.scss */
-#idp-container h3 {
+/* line 50, ../scss/_pdv.scss */
+#idp-container-one h3, #idp-container-two h3 {
   font-size: 1rem;
 }
-/* line 49, ../scss/_pdv.scss */
-#idp-container p {
+/* line 53, ../scss/_pdv.scss */
+#idp-container-one p, #idp-container-one li, #idp-container-two p, #idp-container-two li {
   font-size: 0.9375rem;
-  color: #999;
+  color: #888;
 }
 
-/* line 59, ../scss/_pdv.scss */
+/* line 63, ../scss/_pdv.scss */
 header div {
   background: #040407;
   padding: 1.5rem;
   position: relative;
 }
 
-/* line 66, ../scss/_pdv.scss */
+/* line 70, ../scss/_pdv.scss */
 header img {
   display: block;
   float: left;
   max-width: 150px;
 }
 
-/* line 72, ../scss/_pdv.scss */
+/* line 76, ../scss/_pdv.scss */
 nav {
   background: #fff;
   padding: .5rem;
   border-bottom: 1px solid #eaeaea;
 }
-/* line 77, ../scss/_pdv.scss */
+/* line 81, ../scss/_pdv.scss */
 nav li {
+  display: inline-block;
+  margin: 0 1rem 0 0;
   list-style-type: none;
   font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 1.3px;
 }
-/* line 85, ../scss/_pdv.scss */
+/* line 91, ../scss/_pdv.scss */
 nav a {
-  color: #999;
+  color: #888;
   text-decoration: none;
 }
 
-/* line 93, ../scss/_pdv.scss */
+/* line 99, ../scss/_pdv.scss */
 #breadcrumbs {
   margin-top: 1rem;
   margin-left: 0;
+  padding: 0;
 }
-/* line 96, ../scss/_pdv.scss */
+/* line 103, ../scss/_pdv.scss */
 #breadcrumbs li {
   float: left;
   margin-right: 10px;
-  color: #999;
+  color: #888;
   list-style-type: none;
   font-size: 0.8125rem;
 }
-/* line 102, ../scss/_pdv.scss */
+/* line 109, ../scss/_pdv.scss */
 #breadcrumbs li:after {
   content: '/';
   padding-left: 10px;
 }
-/* line 107, ../scss/_pdv.scss */
+/* line 114, ../scss/_pdv.scss */
 #breadcrumbs li:last-child:after {
   content: '';
 }
 
-/* line 116, ../scss/_pdv.scss */
+/* line 123, ../scss/_pdv.scss */
 #idp-image-main {
   padding: 1rem;
 }
+/* line 127, ../scss/_pdv.scss */
+#idp-image-main ul li img {
+  height: 350px;
+  width: auto;
+  margin: auto;
+}
 
-/* line 122, ../scss/_pdv.scss */
+/* line 137, ../scss/_pdv.scss */
+#idp-thumbnails ul {
+  display: table;
+}
+/* line 139, ../scss/_pdv.scss */
+#idp-thumbnails ul li {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  list-style-type: none;
+}
+/* line 145, ../scss/_pdv.scss */
+#idp-thumbnails ul li.active {
+  opacity: 1;
+}
+
+/* line 152, ../scss/_pdv.scss */
+#idp-thumbnails-more-button {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* line 160, ../scss/_pdv.scss */
 #idp-title {
   margin: 0;
-  font-family: "proxima-nova-regular", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
 }
-/* line 127, ../scss/_pdv.scss */
+/* line 165, ../scss/_pdv.scss */
 #idp-title span {
   display: block;
   margin-bottom: 5px;
@@ -13567,67 +13603,236 @@ nav a {
   letter-spacing: 1.5px;
 }
 
-/* line 138, ../scss/_pdv.scss */
+/* line 176, ../scss/_pdv.scss */
 #idp-key > div {
   margin-bottom: 1.5rem;
 }
-/* line 142, ../scss/_pdv.scss */
+/* line 179, ../scss/_pdv.scss */
+#idp-key ul {
+  margin: 0;
+}
+/* line 181, ../scss/_pdv.scss */
 #idp-key ul li {
-  font-size: 0.9375rem;
+  display: inline-block;
+  margin: .3rem .15rem;
+  padding: .15rem .5rem;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  color: #888;
+  font-size: 0.875rem;
+  list-style-type: none;
+}
+/* line 191, ../scss/_pdv.scss */
+#idp-key ul a {
+  text-decoration: none;
 }
 
-/* line 148, ../scss/_pdv.scss */
+/* line 199, ../scss/_pdv.scss */
 #idp-purchase {
   padding-left: 20px;
 }
-/* line 152, ../scss/_pdv.scss */
+/* line 203, ../scss/_pdv.scss */
 #idp-purchase .row {
   margin: 0;
 }
-/* line 156, ../scss/_pdv.scss */
+/* line 207, ../scss/_pdv.scss */
 #idp-purchase #price {
   font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
   font-size: 1.375rem;
 }
-/* line 161, ../scss/_pdv.scss */
+/* line 212, ../scss/_pdv.scss */
 #idp-purchase #price-original {
   margin-left: .5rem;
-  color: #999;
+  color: #888;
   font-size: 1.125rem;
   text-decoration: line-through;
 }
-/* line 168, ../scss/_pdv.scss */
+/* line 219, ../scss/_pdv.scss */
 #idp-purchase #price, #idp-purchase #price-original {
   display: inline-block;
 }
-/* line 172, ../scss/_pdv.scss */
+/* line 223, ../scss/_pdv.scss */
 #idp-purchase #affirm-breakdown {
   font-size: 0.875rem;
 }
-/* line 177, ../scss/_pdv.scss */
+/* line 228, ../scss/_pdv.scss */
 #idp-purchase #free-shipping p {
   font-size: 0.875rem;
 }
-/* line 182, ../scss/_pdv.scss */
+/* line 233, ../scss/_pdv.scss */
 #idp-purchase #add-to-bag {
   margin: 1rem 0;
 }
-/* line 184, ../scss/_pdv.scss */
+/* line 235, ../scss/_pdv.scss */
 #idp-purchase #add-to-bag button {
   width: 100%;
   background-color: #ee7873;
+  font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
-/* line 192, ../scss/_pdv.scss */
+/* line 244, ../scss/_pdv.scss */
 #idp-purchase #free-shipping {
   text-align: center;
 }
-/* line 196, ../scss/_pdv.scss */
+/* line 248, ../scss/_pdv.scss */
 #idp-purchase #share, #idp-purchase #love {
   display: inline-block;
 }
-/* line 200, ../scss/_pdv.scss */
+/* line 253, ../scss/_pdv.scss */
+#idp-purchase #share span {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  color: #111;
+  font-size: 1.125rem;
+}
+/* line 261, ../scss/_pdv.scss */
 #idp-purchase #love {
+  position: relative;
+  top: -5px;
   float: right;
+}
+/* line 265, ../scss/_pdv.scss */
+#idp-purchase #love span {
+  font-size: 1.875rem;
+}
+/* line 268, ../scss/_pdv.scss */
+#idp-purchase #love p {
+  display: inline-block;
+  position: relative;
+  top: .15rem;
+  margin-bottom: 0;
+  vertical-align: top;
+  color: #111;
+}
+/* line 277, ../scss/_pdv.scss */
+#idp-purchase #return-policy {
+  margin: 1rem 0;
+  font-size: 0.9375rem;
+}
+/* line 280, ../scss/_pdv.scss */
+#idp-purchase #return-policy a {
+  display: block;
+  margin-bottom: .25rem;
+}
+/* line 285, ../scss/_pdv.scss */
+#idp-purchase #pay-with {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* line 294, ../scss/_pdv.scss */
+#idp-info .row {
+  margin: 2rem 0;
+}
+/* line 297, ../scss/_pdv.scss */
+#idp-info #seller {
+  float: left;
+}
+/* line 299, ../scss/_pdv.scss */
+#idp-info #seller figure {
+  display: inline-block;
+  margin-right: .25rem;
+}
+/* line 303, ../scss/_pdv.scss */
+#idp-info #seller figure img {
+  border: 1px solid #888;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+/* line 310, ../scss/_pdv.scss */
+#idp-info #seller h3 {
+  display: inline-block;
+  margin-right: .5rem;
+}
+/* line 313, ../scss/_pdv.scss */
+#idp-info #seller h3 a {
+  color: #111;
+}
+/* line 317, ../scss/_pdv.scss */
+#idp-info #seller #message {
+  color: #ee7873;
+  text-decoration: none;
+}
+/* line 322, ../scss/_pdv.scss */
+#idp-info #report {
+  float: right;
+}
+/* line 324, ../scss/_pdv.scss */
+#idp-info #report span {
+  position: relative;
+  top: .25rem;
+  margin-right: .5rem;
+}
+/* line 331, ../scss/_pdv.scss */
+#idp-info #idp-condition ul {
+  display: table;
+  width: 100%;
+  margin: 1rem 1.1rem;
+}
+/* line 335, ../scss/_pdv.scss */
+#idp-info #idp-condition ul li {
+  float: left;
+  width: 50%;
+  line-height: 1.8;
+}
+/* line 342, ../scss/_pdv.scss */
+#idp-info #idp-condition p {
+  margin-top: 1rem;
+}
+/* line 344, ../scss/_pdv.scss */
+#idp-info #idp-condition p span {
+  color: #111;
+  font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
+}
+/* line 352, ../scss/_pdv.scss */
+#idp-info #idp-details p {
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+/* line 364, ../scss/_pdv.scss */
+#idp-similar-items .row {
+  margin: 2rem 0;
+}
+/* line 367, ../scss/_pdv.scss */
+#idp-similar-items h3 {
+  margin-bottom: 1rem;
+}
+/* line 370, ../scss/_pdv.scss */
+#idp-similar-items figure {
+  display: table;
+  float: none;
+  height: 180px;
+  width: 130px;
+  margin: auto;
+}
+/* line 376, ../scss/_pdv.scss */
+#idp-similar-items figure a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 383, ../scss/_pdv.scss */
+#idp-similar-items figure img {
+  width: 100%;
+}
+/* line 387, ../scss/_pdv.scss */
+#idp-similar-items figcaption {
+  font-family: "proxima-nova-semi", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+/* line 391, ../scss/_pdv.scss */
+#idp-similar-items p {
+  color: #111;
+  text-align: center;
+}
+/* line 394, ../scss/_pdv.scss */
+#idp-similar-items p span {
+  color: #888;
+  text-decoration: line-through;
 }
